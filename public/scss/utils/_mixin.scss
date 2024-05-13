@@ -8,8 +8,9 @@
   padding: 18px 39.5px;
 }
 
-@mixin font($fs: 24px, $fw: normal, $fst: normal, $lh: normal) {
-  font-family: "Gilroy";
+@mixin font($ff: "Gilroy", $fs: 24px, $fw: normal, $fst: normal, $lh: normal, $color: black) {
+  font-family: $ff;
+  color: $color;
   font-size: $fs;
   font-weight: $fw;
   font-style: $fst;

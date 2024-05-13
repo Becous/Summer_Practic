@@ -2,19 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/img/logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="/public/img/logo.svg#logo" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
     <div id="app">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="container header__container">
+          <a class="logo">
+            <svg class="logo__img" width="50" height="50">
+              <use href="/public/img/logo.svg#logo"></use>
+            </svg>
+            <p class="logo__text">tere</p>
+          </a>
+        </div>
       </header>
       <main>
-        <div class="container">
-          <p class="text">Hello world</p>
-        </div>
+        <div class="container"></div>
       </main>
       <footer>
         <div class="container"></div>
