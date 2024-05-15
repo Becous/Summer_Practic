@@ -1,0 +1,60 @@
+.footer {
+  background-color: white;
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+  }
+
+  &__button {
+    @include button;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    &-box {
+      display: flex;
+      gap: 41px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    &-text {
+      @include font($fs: 16px, $color: $green);
+    }
+  }
+}
+
+.info {
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+  }
+  &__title {
+    @include font($fs: 22px, $fw: 500);
+  }
+  &__text {
+    @include font($fs: 18, $color: $text_gray);
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.logo {
+  display: flex;
+  gap: 5px;
+  &__img-footer {
+    color: black;
+  }
+  &__text-footer {
+    color: black;
+    font-size: 47.57px;
+    font-weight: 500;
+  }
+}

@@ -6,11 +6,30 @@
   padding-bottom: 38px;
   &__container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+  }
+  &__button {
+    @include button($color: $green, $fw: 600, $color_hover: black);
+  }
+  &__item {
+    & > a {
+      @include font($fs: 17.16px, $fw: 500);
+      &:hover,
+      &:focus {
+        color: $green;
+        transition: 0.2s color;
+      }
+    }
   }
 }
 
 .logo {
-  cursor: pointer;
   display: flex;
   align-items: center;
   &__img {
