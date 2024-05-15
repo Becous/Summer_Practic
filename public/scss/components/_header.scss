@@ -15,7 +15,7 @@
     gap: 46px;
   }
   &__button {
-    @include button($color: $green, $fw: 600, $color_hover: black);
+    @include button($color: $green, $fw: 600, $color_hover: black, $tt: none);
   }
   &__item {
     & > a {

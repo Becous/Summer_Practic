@@ -1,21 +1,11 @@
 .footer {
   background-color: white;
+  margin-top: 275px;
   &__main {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 22px;
-  }
-
-  &__button {
-    @include button;
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    &-box {
-      display: flex;
-      gap: 41px;
-    }
   }
 
   &__bottom {
@@ -38,23 +28,11 @@
   }
   &__text {
     @include font($fs: 18, $color: $text_gray);
+    cursor: pointer;
   }
   &__main {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-}
-
-.logo {
-  display: flex;
-  gap: 5px;
-  &__img-footer {
-    color: black;
-  }
-  &__text-footer {
-    color: black;
-    font-size: 47.57px;
-    font-weight: 500;
   }
 }

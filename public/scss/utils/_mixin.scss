@@ -1,13 +1,15 @@
-@mixin button($color: #000000, $fw: 800, $color_hover: white) {
+@mixin button($color: #000000, $fw: 800, $color_hover: white, $tt: uppercase) {
   cursor: pointer;
   background-color: $color;
   font-size: 24px;
   color: #ffffff;
+  text-transform: $tt;
   font-weight: $fw;
   text-decoration: none;
   border: none;
   border-radius: 5px;
   padding: 18px 39.5px;
+  white-space: nowrap;
   &:hover,
   &:focus {
     transition: 0.5s background-color;

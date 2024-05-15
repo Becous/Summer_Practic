@@ -1,0 +1,56 @@
+.hero {
+  margin-top: 54px;
+  &__info {
+    margin-bottom: 86px;
+    display: flex;
+    gap: 103px;
+    &-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 62px;
+    }
+  }
+  &__title {
+    @include font($fs: 60.73px, $fw: 800, $color: black);
+  }
+  &__text {
+    @include font($fs: 24px, $fw: 500, $color: $gray);
+    &-box {
+      display: flex;
+      flex-direction: column;
+      gap: 27px;
+    }
+  }
+
+  &__img {
+    margin-right: 67px;
+  }
+
+  &__form {
+    background-color: $green;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 50px 70px;
+    &-title {
+      @include font($color: white, $fs: 24.6px, $fw: 600);
+      max-width: 246px;
+      margin-right: 122px;
+    }
+    &-input {
+      width: 500px;
+      height: 67px;
+      border: none;
+      border-radius: 4.39px;
+      margin-right: 11px;
+      padding: 29px 35px;
+      outline: none;
+      &::placeholder {
+        @include font($color: #dadada, $fs: 20px, $fw: 600px);
+      }
+    }
+  }
+}

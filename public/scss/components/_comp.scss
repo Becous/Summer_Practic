@@ -1,0 +1,26 @@
+.logo {
+  display: flex;
+  gap: 5px;
+  &__img-footer {
+    color: black;
+  }
+  &__text-footer {
+    color: black;
+    font-size: 47.57px;
+    font-weight: 500;
+  }
+}
+
+.button {
+  @include button;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  &-box {
+    display: flex;
+    gap: 30px;
+    &_footer {
+      gap: 41px;
+    }
+  }
+}
