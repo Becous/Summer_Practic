@@ -1,13 +1,20 @@
 .logo {
   display: flex;
   gap: 5px;
-  &__img-footer {
-    color: black;
+  align-items: center;
+  &__img {
+    color: $green;
+    &-footer {
+      color: black !important;
+    }
   }
-  &__text-footer {
-    color: black;
-    font-size: 47.57px;
-    font-weight: 500;
+  &__text {
+    @include font($ff: "Itc", $lh: 68px, $fw: 500, $fs: 65.28px, $color: $green);
+    &-footer {
+      color: black !important;
+      font-size: 47.57px !important;
+      font-weight: 500 !important;
+    }
   }
 }
 

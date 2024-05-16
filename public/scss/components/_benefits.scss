@@ -1,0 +1,70 @@
+.benefits {
+  margin-top: 87px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    @include font($fs: 46.39px, $fw: 800);
+    & > span {
+      color: $green;
+    }
+  }
+  &__items {
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+  &__card {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 260px;
+    max-width: 1060px;
+    max-height: 304px;
+    border-radius: 10px;
+    padding-right: 110px;
+    padding-left: 39px;
+    padding-top: 39px;
+    padding-bottom: 39px;
+
+    opacity: 0;
+    transform: translateY(0%);
+
+    &:last-child {
+      gap: 79px;
+    }
+    &:nth-child(2) {
+      margin-left: 80px;
+    }
+    &_show {
+      opacity: 1;
+      transition: all 1s;
+      transform: translateY(0%);
+    }
+  }
+}
+
+.card {
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__main-text-bix {
+    display: flex;
+    gap: 39px;
+    align-items: center;
+  }
+  &__number {
+    @include font($fw: 500, $fs: 88px, $color: $green);
+  }
+  &__title {
+    @include font($fw: 600, $fs: 33.94px);
+  }
+  &__little-text {
+    @include font($fs: 22px, $fw: 500, $color: $gray);
+  }
+}
