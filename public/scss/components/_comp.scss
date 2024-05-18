@@ -10,6 +10,9 @@
   }
   &__text {
     @include font($ff: "Itc", $lh: 68px, $fw: 500, $fs: 65.28px, $color: $green);
+    @include mobile {
+      font-size: 33.72px;
+    }
     &-footer {
       color: black !important;
       font-size: 47.57px !important;

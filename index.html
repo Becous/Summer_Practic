@@ -23,11 +23,20 @@
             <li class="header__item"><a href="#">Tere benefits</a></li>
             <li class="header__item"><button type="button" class="header__button">Help Center</button></li>
           </ul>
-          <button class="button nav__button" type="button">
-            <svg width="30" height="27">
+          <button class="nav__button" type="button" onclick="toggleNav()">
+            <svg width="30" height="27" class="nav__button-img nav__button-img_open">
+              <use href="/public/img/logo.svg#open"></use>
+            </svg>
+            <svg width="30" height="27" class="nav__button-img nav__button-img_close">
               <use href="/public/img/logo.svg#close"></use>
             </svg>
           </button>
+          <ul class="sidebar" id="mySidebar">
+            <li class="sidebar__items"><a class="sidebar__a" href="#">Home</a></li>
+            <li class="sidebar__items"><a class="sidebar__a" href="#">How tere works</a></li>
+            <li class="sidebar__items"><a class="sidebar__a" href="#">Tere benefits</a></li>
+            <li class="sidebar__items"><button type="button" class="sidebar__button button">Help Center</button></li>
+          </ul>
         </div>
       </header>
       <main>
@@ -211,5 +220,27 @@
       </footer>
     </div>
     <script type="module" src="/main.js"></script>
+    <script>
+      function toggleNav() {
+        const sidebar = document.getElementById("mySidebar");
+        if (sidebar.style.width === "250px") {
+          sidebar.style.width = "0";
+          document.removeEventListener("click", handleOutsideClick);
+        } else {
+          sidebar.style.width = "250px";
+          setTimeout(() => {
+            document.addEventListener("click", handleOutsideClick);
+          }, 0);
+        }
+      }
+
+      function handleOutsideClick(event) {
+        const sidebar = document.getElementById("mySidebar");
+        if (!sidebar.contains(event.target) && !event.target.classList.contains("toggle-btn")) {
+          sidebar.style.width = "0";
+          document.removeEventListener("click", handleOutsideClick);
+        }
+      }
+    </script>
   </body>
 </html>
