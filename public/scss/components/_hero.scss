@@ -4,6 +4,9 @@
     margin-bottom: 86px;
     display: flex;
     gap: 103px;
+    @include mobile {
+      flex-direction: column-reverse;
+    }
     &-box {
       display: flex;
       flex-direction: column;
@@ -13,18 +16,31 @@
   }
   &__title {
     @include font($fs: 60.73px, $fw: 800, $color: black);
+    @include mobile {
+      font-size: 34.86px;
+    }
   }
   &__text {
     @include font($fs: 24px, $fw: 500, $color: $gray);
+    @include mobile {
+      font-size: 18px;
+    }
     &-box {
       display: flex;
       flex-direction: column;
       gap: 27px;
+      @include mobile {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
     }
   }
 
   &__img {
     margin-right: 67px;
+    width: 100%;
+    height: 100%;
   }
 
   &__form {
@@ -33,12 +49,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 50px 70px;
+    @include mobile {
+      flex-direction: column;
+      gap: 25px;
+    }
     &-title {
       @include font($color: white, $fs: 24.6px, $fw: 600);
       max-width: 246px;
       margin-right: 122px;
+      @include mobile {
+        margin: 0;
+      }
     }
     &-input {
       width: 500px;
@@ -48,9 +70,22 @@
       margin-right: 11px;
       padding: 29px 35px;
       outline: none;
+      @include mobile {
+        margin: 0;
+        max-width: 280px;
+      }
       &::placeholder {
         @include font($color: #dadada, $fs: 20px, $fw: 600px);
       }
+    }
+  }
+  &__button {
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 24px 0px;
+      font-size: 18px;
     }
   }
 }

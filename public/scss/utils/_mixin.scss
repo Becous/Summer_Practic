@@ -1,4 +1,16 @@
-@mixin button($color: #000000, $fw: 800, $color_hover: white, $tt: uppercase) {
+@mixin mobile {
+  @media screen and (max-width: 767.9px) and (min-width: 0) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin button($color: #000000, $fw: 800, $color_hover: white, $tt: uppercase, $fw_m: 14.13px) {
   cursor: pointer;
   background-color: $color;
   font-size: 24px;
@@ -15,6 +27,10 @@
     transition: 0.5s background-color;
     background-color: mix($color, $color_hover, 75%);
   }
+  @include mobile {
+    font-size: $fw_m;
+    padding: 6px 18px;
+  }
 }
 
 @mixin font($ff: "Gilroy", $fs: 24px, $fw: normal, $fst: normal, $lh: normal, $color: black) {
@@ -25,16 +41,4 @@
   font-style: $fst;
   line-height: $lh;
   word-wrap: break-word;
-}
-
-@mixin mobile {
-  @media screen and (max-width: 767.9px) and (min-width: 0) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media screen and (min-width: 1200px) {
-    @content;
-  }
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Розмітка сітки</title>
+    <style>
+      /* style.css */
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 2fr; /* Змінено на 2 рядки */
+        grid-gap: 10px;
+      }
+
+      .element1 {
+        grid-column: 1;
+        grid-row: 1; /* Розміщує елемент у першому стовпці, першому рядку */
+        background-color: #f00; /* Червоний */
+      }
+
+      .element2 {
+        grid-column: 3;
+        grid-row: 1; /* Розміщує елемент у третьому стовпці, першому рядку */
+        background-color: #0f0; /* Зелений */
+      }
+
+      .element3 {
+        grid-column: 1;
+        grid-row: 2; /* Розміщує елемент у першому стовпці, другому рядку */
+        background-color: #00f; /* Синій */
+      }
+
+      .element4 {
+        grid-column: 3;
+        grid-row: 2; /* Розміщує елемент у третьому стовпці, другому рядку */
+        background-color: #ff0; /* Жовтий */
+      }
+
+      .element0 {
+        /* Додано стиль для елемента з індексом 0 */
+        grid-column: 2;
+        grid-row: 1 / 3; /* Розміщує елемент від першого до третього рядка */
+        background-color: #000; /* Чорний */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="element0">Елемент 0</div>
+      <div class="element1">Елемент 1</div>
+      <div class="element2">Елемент 2</div>
+      <div class="element3">Елемент 3</div>
+      <div class="element4">Елемент 4</div>
+    </div>
+  </body>
+</html>

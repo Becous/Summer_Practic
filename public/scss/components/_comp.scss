@@ -26,8 +26,15 @@
   &-box {
     display: flex;
     gap: 30px;
+    @include mobile {
+      justify-content: center;
+    }
     &_footer {
       gap: 41px;
+      @include mobile {
+        flex-direction: column;
+        gap: 9px;
+      }
     }
   }
 }

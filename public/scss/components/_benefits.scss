@@ -1,5 +1,5 @@
 .benefits {
-  margin-top: 87px;
+  margin-top: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,7 @@
     padding-bottom: 39px;
 
     opacity: 0;
-    transform: translateY(0%);
+    transform: translateY(100%);
 
     &:last-child {
       gap: 79px;
@@ -41,7 +41,7 @@
     }
     &_show {
       opacity: 1;
-      transition: all 1s;
+      transition: all 1.2s;
       transform: translateY(0%);
     }
   }
