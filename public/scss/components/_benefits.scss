@@ -15,6 +15,9 @@
     display: flex;
     flex-direction: column;
     gap: 56px;
+    @include mobile {
+      gap: 19px;
+    }
   }
   &__card {
     background-color: white;
@@ -32,12 +35,28 @@
 
     opacity: 0;
     transform: translateY(100%);
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 33px 18px 57px;
+      gap: 19px;
+      max-width: 100%;
+      max-height: 477px;
+    }
 
     &:last-child {
       gap: 79px;
+      @include mobile {
+        gap: 10px;
+      }
     }
     &:nth-child(2) {
       margin-left: 80px;
+      @include mobile {
+        flex-direction: column-reverse;
+        margin: 0;
+      }
     }
     &_show {
       opacity: 1;
@@ -52,11 +71,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    @include mobile {
+      gap: 10px;
+    }
   }
   &__main-text-bix {
     display: flex;
     gap: 39px;
     align-items: center;
+    @include mobile {
+      gap: 18px;
+    }
   }
   &__number {
     @include font($fw: 500, $fs: 88px, $color: $green);
@@ -66,5 +91,8 @@
   }
   &__little-text {
     @include font($fs: 22px, $fw: 500, $color: $gray);
+    @include mobile {
+      text-align: center;
+    }
   }
 }

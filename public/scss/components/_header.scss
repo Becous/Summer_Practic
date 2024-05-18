@@ -16,6 +16,9 @@
     display: flex;
     align-items: center;
     gap: 46px;
+    @include mobile {
+      display: none;
+    }
   }
   &__button {
     @include button($color: $green, $fw: 600, $color_hover: black, $tt: none);
@@ -29,5 +32,11 @@
         transition: 0.2s color;
       }
     }
+  }
+}
+
+.nav {
+  &__button {
+    background-color: $background;
   }
 }
