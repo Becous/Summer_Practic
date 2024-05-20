@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="container header__container">
+          <a href="#" class="logo">
+            <svg class="logo__img" width="50" height="50">
+              <use href="/assets/img/logo.svg#logo"></use>
+            </svg>
+            <p class="logo__text">tere</p>
+          </a>
+          <ul class="header__nav">
+            <li class="header__item"><a href="#">Home</a></li>
+            <li class="header__item"><a href="#">How tere works</a></li>
+            <li class="header__item"><a href="#">Tere benefits</a></li>
+            <li class="header__item"><button type="button" class="header__button">Help Center</button></li>
+          </ul>
+          <button class="nav__button" type="button" onclick="toggleNav()">
+            <svg width="35" height="35" class="nav__button-img nav__button-img_open">
+              <use href="/assets/img/logo.svg#open"></use>
+            </svg>
+          </button>
+          <ul class="sidebar" id="mySidebar">
+            <li class="sidebar__items"><a class="sidebar__a" href="#">Home</a></li>
+            <li class="sidebar__items"><a class="sidebar__a" href="#">How tere works</a></li>
+            <li class="sidebar__items"><a class="sidebar__a" href="#">Tere benefits</a></li>
+            <li class="sidebar__items"><button type="button" class="sidebar__button button">Help Center</button></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <section class="hero">
+            <div class="hero__info">
+              <div class="hero__info-box">
+                <div class="hero__text-box">
+                  <h1 class="hero__title">DOWNLOAD APP, SAVE MONEY, MAKE FRIENDS!</h1>
+                  <p class="hero__text">
+                    Its simple and its free. Play your part in reducing Carbon Footprint and help Mother Nature to
+                    sustain its beauty. So what are you waiting for ? Lets ride together
+                  </p>
+                </div>
+                <div class="button-box">
+                  <button type="button" class="button">
+                    <svg width="28" height="28">
+                      <use href="/assets/img/logo.svg#appStore"></use>
+                    </svg>
+                    <p>DOWNLOAD</p>
+                  </button>
+                  <button type="button" class="button">
+                    <svg width="28" height="28">
+                      <use href="/assets/img/logo.svg#playMarket"></use>
+                    </svg>
+                    <p>DOWNLOAD</p>
+                  </button>
+                </div>
+              </div>
+              <img class="hero__img" src="/assets/img/main img.png" alt="main" />
+            </div>
+            <div class="hero__form">
+              <p class="hero__form-title">Let’s go. Get a link to download the app.</p>
+              <input class="hero__form-input" type="text" name="" placeholder="Enter mobile phone number" id="" />
+              <button class="hero__button button" type="button">Apply to drive</button>
+            </div>
+          </section>
+          <section class="about">
+            <div class="about__title-box">
+              <h2 class="about__title">HOW <span>TERE</span> WORKS</h2>
+              <p class="about__little-text">
+                Download and install the tere app. Enter your phone number and make your user account. when approved you
+                may start driving.
+              </p>
+            </div>
+            <div class="about__main">
+              <!-- Slider main container -->
+              <div class="card0">
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/assets/img/phone.png" alt="" class="card0__img" /></div>
+                    <div class="swiper-slide"><img src="/assets/img/phone.png" alt="" class="card0__img" /></div>
+                    <div class="swiper-slide"><img src="/assets/img/phone.png" alt="" class="card0__img" /></div>
+                    <div class="swiper-slide"><img src="/assets/img/phone.png" alt="" class="card0__img" /></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <div class="about__card card1">
+                <h2 class="about__card-title1 benefits__title"><span>TERE </span>BENEFITS</h2>
+                <svg class="about__card-img" width="60" height="60">
+                  <use href="/assets/img/logo.svg#1"></use>
+                </svg>
+                <h3 class="about__card-title">REQUEST A RIDE</h3>
+                <p class="about__card-little">
+                  Have to reach office or going for shopping ? Just put your current location and destination and search
+                  a ride that suits you
+                </p>
+              </div>
+              <div class="about__card card2">
+                <svg class="about__card-img" width="60" height="60">
+                  <use href="/assets/img/logo.svg#2"></use>
+                </svg>
+                <h3 class="about__card-title">POST A RIDE</h3>
+                <p class="about__card-little">
+                  Going somewhere but hate to travel alone - just post your ride details and publish it
+                </p>
+              </div>
+              <div class="about__card card3">
+                <svg class="about__card-img" width="60" height="60">
+                  <use href="/assets/img/logo.svg#3"></use>
+                </svg>
+                <h3 class="about__card-title">INSTANT NOTIFICATIONS</h3>
+                <p class="about__card-little">
+                  Get instant notifications for your rides and be in contact with fellow riders all the time
+                </p>
+              </div>
+              <div class="about__card card4">
+                <svg class="about__card-img" width="60" height="60">
+                  <use href="/assets/img/logo.svg#4"></use>
+                </svg>
+                <h3 class="about__card-title">CASHLESS PAYMENT</h3>
+                <p class="about__card-little">Payment made easy by using your own Wallet - no more cash to carry</p>
+              </div>
+            </div>
+          </section>
+          <section class="benefits">
+            <h2 class="benefits__title"><span>TERE </span>BENEFITS</h2>
+            <ul class="benefits__items">
+              <li class="benefits__card">
+                <div class="card__text-box">
+                  <div class="card__main-text-bix">
+                    <p class="card__number">01.</p>
+                    <h3 class="card__title">Flexible working hours</h3>
+                  </div>
+                  <p class="card__little-text">You can decide when, and how much time you want to drive.</p>
+                </div>
+                <img src="./assets/img/time.png" alt="" />
+              </li>
+              <li class="benefits__card">
+                <img src="./assets/img/money.png" alt="" />
+                <div class="card__text-box">
+                  <div class="card__main-text-bix">
+                    <p class="card__number">02.</p>
+                    <h3 class="card__title">Earnings</h3>
+                  </div>
+                  <p class="card__little-text">By driving with tere you can earn more.</p>
+                </div>
+              </li>
+              <li class="benefits__card">
+                <div class="card__text-box">
+                  <div class="card__main-text-bix">
+                    <p class="card__number">03.</p>
+                    <h3 class="card__title">Customer support 24/7</h3>
+                  </div>
+                  <p class="card__little-text">
+                    Tere is a local service provider and we are proud to support you in your local language. We are
+                    proud to be at your service 24/7!
+                  </p>
+                </div>
+                <img src="./assets/img/cum.png" alt="" />
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__main">
+            <a href="#" class="logo logo-footer">
+              <svg class="logo__img-footer logo__img" width="36" height="36">
+                <use href="/assets/img/logo.svg#logo"></use>
+              </svg>
+              <p class="logo__text logo__text-footer">tere</p>
+            </a>
+            <div class="info__box">
+              <h3 class="info__title">Be Our Friend</h3>
+              <div class="info__main">
+                <address class="info__address info__text">3, Season Park, Jakarta</address>
+                <a href="" class="info__email info__text">support@foodyar.co,id</a>
+                <a href="tel:+" class="info__tel info__text">021 - 1111 - 2222</a>
+              </div>
+            </div>
+            <div class="info__box">
+              <h3 class="info__title">Be Our Friend</h3>
+              <div class="info__main">
+                <address class="info__address info__text">3, Season Park, Jakarta</address>
+                <a href="" class="info__email info__text">support@foodyar.co,id</a>
+                <a href="tel:+" class="info__tel info__text">021 - 1111 - 2222</a>
+              </div>
+            </div>
+            <div class="button-box button-box_footer">
+              <button class="button" type="button">
+                <svg width="30" height="27">
+                  <use href="/assets/img/logo.svg#playMarket"></use>
+                </svg>
+                <p>DOWNLOAD</p>
+              </button>
+              <button class="button" type="button">
+                <svg width="28" height="28">
+                  <use href="/assets/img/logo.svg#appStore"></use>
+                </svg>
+                <p>DOWNLOAD</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__bottom-text">All Rights Reserved tere by Codematics 2022</p>
+        </div>
+        ім
+      </footer>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+    <script>
+      function toggleNav() {
+        const sidebar = document.getElementById("mySidebar");
+        if (sidebar.style.width === "250px") {
+          sidebar.style.width = "0";
+          document.removeEventListener("click", handleOutsideClick);
+        } else {
+          sidebar.style.width = "250px";
+          setTimeout(() => {
+            document.addEventListener("click", handleOutsideClick);
+          }, 0);
+        }
+      }
+
+      function handleOutsideClick(event) {
+        const sidebar = document.getElementById("mySidebar");
+        if (!sidebar.contains(event.target) && !event.target.classList.contains("toggle-btn")) {
+          sidebar.style.width = "0";
+          document.removeEventListener("click", handleOutsideClick);
+        }
+      }
+    </script>
+  </body>
+</html>

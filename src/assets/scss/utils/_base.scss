@@ -1,0 +1,39 @@
+a,
+ul,
+body,
+h1,
+h3,
+h2,
+p,
+li,
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gilroy";
+  font-style: normal;
+  line-height: normal;
+  font-weight: normal;
+  font-size: 14px;
+  background-color: $background;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+a,
+address {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+html {
+  overflow-x: hidden;
+}

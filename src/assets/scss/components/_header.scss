@@ -1,0 +1,86 @@
+.header {
+  width: 100%;
+  background-color: white;
+  padding: 86px 0 38px;
+  @include mobile {
+    padding: 45px 0 29px;
+    background-color: $background;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+    @include mobile {
+      display: none;
+    }
+  }
+  &__button {
+    @include button($color: $green, $fw: 600, $color_hover: black, $tt: none);
+  }
+  &__item {
+    & > a {
+      @include font($fs: 17.16px, $fw: 500);
+      &:hover,
+      &:focus {
+        color: $green;
+        transition: 0.2s color;
+      }
+    }
+  }
+}
+
+.nav {
+  &__button {
+    display: none !important;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile {
+      display: block !important;
+    }
+    &-img {
+      &_close {
+        display: none;
+      }
+    }
+  }
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  &__a {
+    @include font($color: white);
+    &:focus,
+    &:hover {
+      color: $green;
+    }
+  }
+  &__button {
+    background-color: $green;
+  }
+}

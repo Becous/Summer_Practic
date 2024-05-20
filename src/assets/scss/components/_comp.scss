@@ -1,0 +1,43 @@
+.logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  &__img {
+    color: $green;
+    &-footer {
+      color: black !important;
+    }
+  }
+  &__text {
+    @include font($ff: "Itc", $lh: 68px, $fw: 500, $fs: 65.28px, $color: $green);
+    @include mobile {
+      font-size: 33.72px;
+    }
+    &-footer {
+      color: black !important;
+      font-size: 47.57px !important;
+      font-weight: 500 !important;
+    }
+  }
+}
+
+.button {
+  @include button;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  &-box {
+    display: flex;
+    gap: 30px;
+    @include mobile {
+      justify-content: center;
+    }
+    &_footer {
+      gap: 41px;
+      @include mobile {
+        flex-direction: column;
+        gap: 9px;
+      }
+    }
+  }
+}
