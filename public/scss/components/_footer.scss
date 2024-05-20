@@ -15,12 +15,20 @@
     @include mobile {
       flex-direction: column;
       gap: 40px;
+      margin-bottom: 46px;
     }
   }
 
   &__bottom {
     display: flex;
     justify-content: center;
+    border-top: 1px solid #ececec;
+    padding-top: 38px;
+    padding-bottom: 10px;
+    @include mobile {
+      border-top: 0;
+      padding-top: 0;
+    }
     &-text {
       @include font($fs: 16px, $color: $green);
       @include mobile {

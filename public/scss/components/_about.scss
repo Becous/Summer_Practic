@@ -1,5 +1,6 @@
 .about {
   margin-top: 128px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,6 +8,7 @@
 
   &__main {
     display: grid;
+    margin-bottom: 120px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr; /* Змінено на 2 рядки */
     @include mobile {
@@ -20,12 +22,19 @@
   &__title {
     @include font($fs: 46.39px, $fw: 800);
     text-align: center;
+    @include mobile {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
     & > span {
       color: $green;
     }
   }
   &__little-text {
     @include font($fs: 23px, $color: $gray, $fw: 500);
+    @include mobile {
+      font-size: 18px;
+    }
     max-width: 620px;
     text-align: center;
   }
@@ -34,6 +43,15 @@
     gap: 10px;
     flex-direction: column;
     flex-wrap: wrap;
+    &-title1 {
+      display: none;
+      @include mobile {
+        display: block;
+        &.benefits__title {
+          margin-bottom: 38px;
+        }
+      }
+    }
     @include mobile {
       text-align: center;
       align-content: center;
@@ -104,7 +122,15 @@
   grid-column: 2;
   grid-row: 1 / 3; /* Розміщує елемент від першого до третього рядка */
   margin: 0 40px;
+  overflow: hidden;
+  padding-bottom: 40px;
   &__img {
+    height: 85%; /*Костилі*/
+    width: 85%; /*Костилі*/
+    @include mobile {
+      height: 100%;
+      width: 100%;
+    }
   }
   @include mobile {
     margin: 0;
@@ -114,19 +140,26 @@
 .swiper {
   width: 400px;
   height: 560px;
-}
-.swiper-pagination-bullet {
-  cursor: pointer;
-  height: 3px;
-  border-radius: 3px;
-  width: 53px;
-  border: none;
-}
-.swiper-pagination-bullet-active {
-  cursor: pointer;
-  height: 3px;
-  border-radius: 3px;
-  width: 53px;
-  border: none;
-  background-color: #fe390c;
+  position: relative;
+  overflow: visible !important;
+  &-pagination {
+    position: absolute;
+    bottom: -30px !important; /* Змініть значення відповідно до ваших потреб */
+    left: -25px !important; /*Костилі*/
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    @include mobile {
+      left: 0 !important;
+    }
+    &-bullet {
+      height: 12.77px;
+      width: 12.77px;
+      background-color: $green;
+      top: -10%;
+      &-active {
+        background-color: $green;
+      }
+    }
+  }
 }

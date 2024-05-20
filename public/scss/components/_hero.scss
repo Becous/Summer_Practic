@@ -6,6 +6,7 @@
     gap: 103px;
     @include mobile {
       flex-direction: column-reverse;
+      gap: 31px;
     }
     &-box {
       display: flex;
@@ -29,10 +30,12 @@
       display: flex;
       flex-direction: column;
       gap: 27px;
+      margin-top: 108px;
       @include mobile {
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: 0;
       }
     }
   }
@@ -52,14 +55,17 @@
     padding: 50px 70px;
     @include mobile {
       flex-direction: column;
+      padding: 22px 19px 21px 30px;
       gap: 25px;
+      align-items: start;
     }
     &-title {
       @include font($color: white, $fs: 24.6px, $fw: 600);
       max-width: 246px;
       margin-right: 122px;
       @include mobile {
-        margin: 0;
+        margin-right: 0;
+        text-align: left;
       }
     }
     &-input {
@@ -72,7 +78,7 @@
       outline: none;
       @include mobile {
         margin: 0;
-        max-width: 280px;
+        width: 100%;
       }
       &::placeholder {
         @include font($color: #dadada, $fs: 20px, $fw: 600px);

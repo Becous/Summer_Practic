@@ -40,8 +40,8 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-    width: 29px;
-    height: 29px;
+    width: 35px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,8 +51,6 @@
     &-img {
       &_close {
         display: none;
-      }
-      &_open {
       }
     }
   }
@@ -77,6 +75,10 @@
   gap: 14px;
   &__a {
     @include font($color: white);
+    &:focus,
+    &:hover {
+      color: $green;
+    }
   }
   &__button {
     background-color: $green;
