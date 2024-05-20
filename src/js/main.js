@@ -1,3 +1,3 @@
-import "./public/scss/style.scss";
+import "/assets/scss/style.scss";
 import "./swipe";
 import "./scroll";

@@ -1,0 +1,475 @@
+//GILROY
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("//assets/font/Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-Regular.woff2") format("woff2"), url("/assets/font/Gilroy-Regular.woff") format("woff"),
+    url("/assets/font/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-ExtraboldItalic.eot");
+  src: local("Gilroy Extrabold Italic"), local("Gilroy-ExtraboldItalic"),
+    url("/assets/font/Gilroy-ExtraboldItalic.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-ExtraboldItalic.woff2") format("woff2"),
+    url("/assets/font/Gilroy-ExtraboldItalic.woff") format("woff"),
+    url("/assets/font/Gilroy-ExtraboldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("/assets/font/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-Bold.woff2") format("woff2"), url("/assets/font/Gilroy-Bold.woff") format("woff"),
+    url("/assets/font/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-Black.eot");
+  src: local("Gilroy Black"), local("Gilroy-Black"),
+    url("/assets/font/Gilroy-Black.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-Black.woff2") format("woff2"), url("/assets/font/Gilroy-Black.woff") format("woff"),
+    url("/assets/font/Gilroy-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-Light.eot");
+  src: local("Gilroy Light"), local("Gilroy-Light"),
+    url("/assets/font/Gilroy-Light.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-Light.woff2") format("woff2"), url("/assets/font/Gilroy-Light.woff") format("woff"),
+    url("/assets/font/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-Semibold.eot");
+  src: local("Gilroy Semibold"), local("Gilroy-Semibold"),
+    url("/assets/font/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-Semibold.woff2") format("woff2"), url("/assets/font/Gilroy-Semibold.woff") format("woff"),
+    url("/assets/font/Gilroy-Semibold.ttf") format("truetype");
+
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-Medium.eot");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"),
+    url("/assets/font/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-Medium.woff2") format("woff2"), url("/assets/font/Gilroy-Medium.woff") format("woff"),
+    url("/assets/font/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-MediumItalic.eot");
+  src: local("Gilroy Medium Italic"), local("Gilroy-MediumItalic"),
+    url("/assets/font/Gilroy-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-MediumItalic.woff2") format("woff2"),
+    url("/assets/font/Gilroy-MediumItalic.woff") format("woff"),
+    url("/assets/font/Gilroy-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-BlackItalic.eot");
+  src: local("Gilroy Black Italic"), local("Gilroy-BlackItalic"),
+    url("/assets/font/Gilroy-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-BlackItalic.woff2") format("woff2"),
+    url("/assets/font/Gilroy-BlackItalic.woff") format("woff"),
+    url("/assets/font/Gilroy-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-UltraLight.eot");
+  src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"),
+    url("/assets/font/Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-UltraLight.woff2") format("woff2"),
+    url("/assets/font/Gilroy-UltraLight.woff") format("woff"),
+    url("/assets/font/Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-RegularItalic.eot");
+  src: local("Gilroy Regular Italic"), local("Gilroy-RegularItalic"),
+    url("/assets/font/Gilroy-RegularItalic.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-RegularItalic.woff2") format("woff2"),
+    url("/assets/font/Gilroy-RegularItalic.woff") format("woff"),
+    url("/assets/font/Gilroy-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-SemiboldItalic.eot");
+  src: local("Gilroy Semibold Italic"), local("Gilroy-SemiboldItalic"),
+    url("/assets/font/Gilroy-SemiboldItalic.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-SemiboldItalic.woff2") format("woff2"),
+    url("/assets/font/Gilroy-SemiboldItalic.woff") format("woff"),
+    url("/assets/font/Gilroy-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-HeavyItalic.eot");
+  src: local("Gilroy Heavy Italic"), local("Gilroy-HeavyItalic"),
+    url("/assets/font/Gilroy-HeavyItalic.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-HeavyItalic.woff2") format("woff2"),
+    url("/assets/font/Gilroy-HeavyItalic.woff") format("woff"),
+    url("/assets/font/Gilroy-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-Extrabold.eot");
+  src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"),
+    url("/assets/font/Gilroy-Extrabold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-Extrabold.woff2") format("woff2"), url("/assets/font/Gilroy-Extrabold.woff") format("woff"),
+    url("/assets/font/Gilroy-Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-BoldItalic.eot");
+  src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"),
+    url("/assets/font/Gilroy-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-BoldItalic.woff2") format("woff2"),
+    url("/assets/font/Gilroy-BoldItalic.woff") format("woff"),
+    url("/assets/font/Gilroy-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-UltraLightItalic.eot");
+  src: local("Gilroy UltraLight Italic"), local("Gilroy-UltraLightItalic"),
+    url("/assets/font/Gilroy-UltraLightItalic.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-UltraLightItalic.woff2") format("woff2"),
+    url("/assets/font/Gilroy-UltraLightItalic.woff") format("woff"),
+    url("/assets/font/Gilroy-UltraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-LightItalic.eot");
+  src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"),
+    url("/assets/font/Gilroy-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-LightItalic.woff2") format("woff2"),
+    url("/assets/font/Gilroy-LightItalic.woff") format("woff"),
+    url("/assets/font/Gilroy-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-Heavy.eot");
+  src: local("Gilroy Heavy"), local("Gilroy-Heavy"),
+    url("/assets/font/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-Heavy.woff2") format("woff2"), url("/assets/font/Gilroy-Heavy.woff") format("woff"),
+    url("/assets/font/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-Thin.eot");
+  src: local("Gilroy Thin"), local("Gilroy-Thin"),
+    url("/assets/font/Gilroy-Thin.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-Thin.woff2") format("woff2"), url("/assets/font/Gilroy-Thin.woff") format("woff"),
+    url("/assets/font/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/font/Gilroy-ThinItalic.eot");
+  src: local("Gilroy Thin Italic"), local("Gilroy-ThinItalic"),
+    url("/assets/font/Gilroy-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/Gilroy-ThinItalic.woff2") format("woff2"),
+    url("/assets/font/Gilroy-ThinItalic.woff") format("woff"),
+    url("/assets/font/Gilroy-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+//ITC
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-BkObl.eot");
+  src: local("ITC Avant Garde Gothic Std Book Oblique"), local("ITCAvantGardeStd-BkObl"),
+    url("/assets/font/itc/ITCAvantGardeStd-BkObl.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-BkObl.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-BkObl.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-BkObl.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-XLtCnObl.eot");
+  src: local("ITC Avant Garde Gothic Std Extra Light Condensed Oblique"), local("ITCAvantGardeStd-XLtCnObl"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLtCnObl.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLtCnObl.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLtCnObl.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLtCnObl.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-BoldCn.eot");
+  src: local("ITC Avant Garde Gothic Std Bold Condensed"), local("ITCAvantGardeStd-BoldCn"),
+    url("/assets/font/itc/ITCAvantGardeStd-BoldCn.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-BoldCn.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-BoldCn.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-BoldCn.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-DemiObl.eot");
+  src: local("ITC Avant Garde Gothic Std Demi Oblique"), local("ITCAvantGardeStd-DemiObl"),
+    url("/assets/font/itc/ITCAvantGardeStd-DemiObl.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-DemiObl.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-DemiObl.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-DemiObl.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-XLtObl.eot");
+  src: local("ITC Avant Garde Gothic Std Extra Light Oblique"), local("ITCAvantGardeStd-XLtObl"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLtObl.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLtObl.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLtObl.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLtObl.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-XLt.eot");
+  src: local("ITC Avant Garde Gothic Std Extra Light"), local("ITCAvantGardeStd-XLt"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLt.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLt.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLt.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLt.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-BoldObl.eot");
+  src: local("ITC Avant Garde Gothic Std Bold Oblique"), local("ITCAvantGardeStd-BoldObl"),
+    url("/assets/font/itc/ITCAvantGardeStd-BoldObl.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-BoldObl.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-BoldObl.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-BoldObl.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-MdCn.eot");
+  src: local("ITC Avant Garde Gothic Std Medium Condensed"), local("ITCAvantGardeStd-MdCn"),
+    url("/assets/font/itc/ITCAvantGardeStd-MdCn.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-MdCn.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-MdCn.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-MdCn.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-XLtCn.eot");
+  src: local("ITC Avant Garde Gothic Std Extra Light Condensed"), local("ITCAvantGardeStd-XLtCn"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLtCn.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLtCn.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLtCn.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-XLtCn.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC ";
+  src: url("/assets/font/itc/ITCAvantGardeStd-DemiCn.eot");
+  src: local("ITC Avant Garde Gothic Std Demi Condensed"), local("ITCAvantGardeStd-DemiCn"),
+    url("/assets/font/itc/ITCAvantGardeStd-DemiCn.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-DemiCn.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-DemiCn.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-DemiCn.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-BkCnObl.eot");
+  src: local("ITC Avant Garde Gothic Std Book Condensed Oblique"), local("ITCAvantGardeStd-BkCnObl"),
+    url("/assets/font/itc/ITCAvantGardeStd-BkCnObl.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-BkCnObl.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-BkCnObl.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-BkCnObl.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-BoldCnObl.eot");
+  src: local("ITC Avant Garde Gothic Std Bold Condensed Oblique"), local("ITCAvantGardeStd-BoldCnObl"),
+    url("/assets/font/itc/ITCAvantGardeStd-BoldCnObl.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-BoldCnObl.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-BoldCnObl.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-BoldCnObl.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-Md.eot");
+  src: local("ITC Avant Garde Gothic Std Medium"), local("ITCAvantGardeStd-Md"),
+    url("/assets/font/itc/ITCAvantGardeStd-Md.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-Md.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-Md.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-Md.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-Demi.eot");
+  src: local("ITC Avant Garde Gothic Std Demi"), local("ITCAvantGardeStd-Demi"),
+    url("/assets/font/itc/ITCAvantGardeStd-Demi.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-Demi.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-Demi.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-Demi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-BkCn.eot");
+  src: local("ITC Avant Garde Gothic Std Book Condensed"), local("ITCAvantGardeStd-BkCn"),
+    url("/assets/font/itc/ITCAvantGardeStd-BkCn.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-BkCn.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-BkCn.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-BkCn.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-DemiCnObl.eot");
+  src: local("ITC Avant Garde Gothic Std Demi Condensed Oblique"), local("ITCAvantGardeStd-DemiCnObl"),
+    url("/assets/font/itc/ITCAvantGardeStd-DemiCnObl.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-DemiCnObl.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-DemiCnObl.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-DemiCnObl.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-MdCnObl.eot");
+  src: local("ITC Avant Garde Gothic Std Medium Condensed Oblique"), local("ITCAvantGardeStd-MdCnObl"),
+    url("/assets/font/itc/ITCAvantGardeStd-MdCnObl.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-MdCnObl.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-MdCnObl.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-MdCnObl.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-MdObl.eot");
+  src: local("ITC Avant Garde Gothic Std Medium Oblique"), local("ITCAvantGardeStd-MdObl"),
+    url("/assets/font/itc/ITCAvantGardeStd-MdObl.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-MdObl.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-MdObl.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-MdObl.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-Bk.eot");
+  src: local("ITC Avant Garde Gothic Std Book"), local("ITCAvantGardeStd-Bk"),
+    url("/assets/font/itc/ITCAvantGardeStd-Bk.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-Bk.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-Bk.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-Bk.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC";
+  src: url("/assets/font/itc/ITCAvantGardeStd-Bold.eot");
+  src: local("ITC Avant Garde Gothic Std Bold"), local("ITCAvantGardeStd-Bold"),
+    url("/assets/font/itc/ITCAvantGardeStd-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/font/itc/ITCAvantGardeStd-Bold.woff2") format("woff2"),
+    url("/assets/font/itc/ITCAvantGardeStd-Bold.woff") format("woff"),
+    url("/assets/font/itc/ITCAvantGardeStd-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
